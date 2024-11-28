@@ -14,7 +14,7 @@ public class RobotContainer {
   XboxController xboxController = new XboxController(0);
 
   public RobotContainer() {
-    s_Subsystem.setDefaultCommand(new DriveCommand(s_Subsystem, () -> xboxController.getLeftY() * 0.3, () -> xboxController.getLeftX() * 0.3, () -> xboxController.getRightX() * 0.6, true));
+    s_Subsystem.setDefaultCommand(new DriveCommand(s_Subsystem, () -> xboxController.getLeftY() * 0.3, () -> xboxController.getLeftX() * 0.3, () -> xboxController.getRightX() * 0.6, false));
     configureBindings();
   }
 
